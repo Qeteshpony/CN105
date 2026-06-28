@@ -10,7 +10,7 @@ on:
 jobs:
   check:
     name: Check
-    uses: Qeteshpony/reusable-workflows/.github/workflows/kibot-check.yml@test
+    uses: Qeteshpony/reusable-workflows/.github/workflows/kibot-check.yml@main
     with:
       config-file: kibot.yml
       board-file: pcb/CN105.kicad_pcb
