@@ -22,7 +22,7 @@ LEDs 3 and 4 show activity on TX and RX and can be left out if you don't want th
 
 Mine are running with ESPHome and the external component found at [github.com/echavet/MitsubishiCN105ESPHome](https://github.com/echavet/MitsubishiCN105ESPHome)
 
-Since this board uses the ESP32-C5 it can use WiFi as well as Thread to communicate with Home Assistant. 
+Since this board uses the ESP32-C6, it can use WiFi as well as Thread to communicate with Home Assistant. 
 
 Keep in mind that cheap serial adapters might not deliver enough power to successfully flash the ESP. I had to feed external power while flashing it. In that case only connect GND, RX and TX of the UART0 header to your serial adapter and feed anything between 6 and 36 volts (That's what the LME78 can handle) into the 12V pin of the boards CN105 header. 
 When using ESPHome this is also just needed once. Updates can then be installed OTA. 
